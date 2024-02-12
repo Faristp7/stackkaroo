@@ -1,3 +1,4 @@
+import DigitalService from "@/components/DigitalService";
 import MainSection from "@/components/MainSection";
 import OurStory from "@/components/OurStory";
 import ServiceSection from "@/components/ServiceSection";
@@ -10,6 +11,7 @@ export default function Home() {
         <ServiceSection/>
         <OurStory/>
         <WhyUs/>
+        <DigitalService/>
     </div>
   );
 }

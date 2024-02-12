@@ -24,7 +24,7 @@ export default function WhyUs() {
       <div className="flex px-3 md:px-44  gap-1.5 sm:gap-5 flex-col md:flex-row  md:flex-wrap justify-center">
         {image.map((i) => (
           <div
-            className="border-2 border-white rounded-l-full rounded-r-full md:rounded-2xl shadow-lg flex p-1.5 md:p-3 md:justify-center items-center gap-1 w-full md:w-52"
+            className="border-2  border-white rounded-l-full rounded-r-full md:rounded-2xl shadow-lg sm:shadow-2xl flex p-1.5 md:p-3 md:justify-center items-center gap-2.5 md:gap-1 w-full md:w-52"
             key={i.img}
           >
             <div className="bg-white p-3 rounded-full md:rounded-lg">
