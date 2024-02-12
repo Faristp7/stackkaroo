@@ -4,7 +4,7 @@ import BookACall from "./BookACall";
 export default function MainSection() {
   return (
     <div className="h-full bg-gradient-to-b from-white to-blue-0 rounded-xl flex flex-col md:flex-col lg:flex-row p-10">
-      <div className="lg:bg-gradient-to-b from-white to-blue-100 order-2 sm:order-1  lg:w-1/2">
+      <div className="order-2 sm:order-1 lg:w-1/2 text-center lg:text-start">
         <h1 className="font-bold text-blue-700 text-lg sm:text-4xl">
           Diversifying the Designs of <br /> Digital World{" "}
         </h1>
@@ -20,9 +20,11 @@ export default function MainSection() {
           projects and activities. We also possess knowledge in web development,
           app development, UI/UX design, as well as digital marketing.
         </p>
+        <div className="flex justify-center lg:justify-start">
         <BookACall/>
+        </div>
       </div>
-      <div className="order-1 md:order-2 lg:bg-gradient-to-b from-white to-red-100">
+      <div className="order-1 md:order-2">
         <Image
           className=" right-1 top-12 "
           src={"/image1.png"}
