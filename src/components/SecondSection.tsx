@@ -4,7 +4,7 @@ import CostButton from "./CostButton";
 export default function SecondSection() {
   return (
     <div className="rounded-xl flex flex-col md:flex-col lg:flex-row p-10 bg-gradient-to-b from-white to-blue-0">
-      <div className="lg:w-1/2 text-center lg:text-start">
+      <div className="order-2 sm:order-1 lg:w-1/2 text-center lg:text-start">
         <h1 className="font-bold text-blue-700 text-lg sm:text-4xl">
           Our Story
         </h1>
@@ -20,10 +20,16 @@ export default function SecondSection() {
           Number (CIN). Our active status and an authorized share capital of Rs
           10.00 lac are a source of pride.
         </p>
-        <CostButton/>
+        <CostButton />
       </div>
-      <div>
-        <Image className="right-1 top-12" src={"/ourStory.png"} width={600} height={600} alt="ourStory" />
+      <div className="order-1 md:order-2">
+        <Image
+          className="right-1 top-12"
+          src={"/ourStory.png"}
+          width={600}
+          height={600}
+          alt="ourStory"
+        />
       </div>
     </div>
   );

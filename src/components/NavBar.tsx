@@ -15,7 +15,7 @@ export default function NavBar() {
   const [activeButton, setActiveButton] = useState<string>("Home");
 
   return (
-    <div className="flex justify-between h-24 items-center px-20 fixed top-0 w-full bg-white z-10">
+    <div className="flex justify-between h-24 items-center px-10 sm:px-20 fixed top-0 w-full bg-white z-10">
       <div className="bg-black h-12 w-12 hidden lg:block"></div>
       <div className="lg:hidden flex flex-col gap-2">
          <div className="bg-black w-8 h-0.5"></div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CostButton() {
   return (
-    <button className="bg-orange-700 rounded-l-full rounded-r-full text-white opacity-70 px-1.5 py-1.5 pr-3 mt-8">
+    <button className="bg-blue-700 md:bg-orange-700 rounded-l-full rounded-r-full text-white md:opacity-70 px-1.5 py-1.5 pr-3 mt-8">
       <div className="flex gap-3 ">
         <Image
           src={"/rupee.png"}
