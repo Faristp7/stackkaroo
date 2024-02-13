@@ -30,7 +30,7 @@ const content = [
 
 export default function SeoServices() {
   return (
-    <div className="rounded-xl p-10 bg-gradient-to-r from-blue-100 to-white sm:bg-gradient-to-b sm:from-white to-blue-0 mt-20">
+    <div className="rounded-xl p-10 bg-gradient-to-r from-blue-100 to-white sm:bg-gradient-to-b sm:from-white to-blue-0 mt-16">
       <div className="flex justify-center">
         <h1 className="font-bold text-center text-orange-600 text-lg lg:text-4xl">
           SEO Services

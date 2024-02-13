@@ -51,19 +51,37 @@ export default function DigitalService() {
         solutions provided are dependable and long-term
       </p>
       <div className="overflow-x-auto mt-8">
-        <div className="flex gap-5 px-5 lg:px-28 lg:grid lg:grid-cols-3 lg:gap-5">
+        <div className="flex gap-5 px-5 lg:px-28 lg:grid lg:grid-cols-3 lg:gap-5 pb-5">
           {content.map((item, index) => (
-            <div className="border-2 border-blue-200 p-4 rounded-2xl" key={index}>
-              <div className="flex justify-center gap-3 items-center w-80 lg:w-auto">
-                <Image src={item.img} width={50} height={50} alt="content" className="hidden lg:block"/>
-                <Image src={item.img} width={40} height={40} alt="content" className="block lg:hidden"/>
-                <h1 className="font-bold text-blue-600 text-center">{item.title}</h1>
-              </div>
-              <div className="mt-3">
-                <p className="text-center">{item.description}</p>
-              </div>
-              <div className="flex justify-center lg:justify-start mt-10 ">
-                <p className="bg-orange-600 text-white font-bold rounded-full px-2 text-lg text-center opacity-80 items-center align-middle">&gt;</p>
+            <div key={index} className="p-0.5 bg-blue-500 rounded-2xl bg-gradient-to-b from-blue-200 to-orange-200">
+              <div className=" p-4 rounded-2xl bg-gradient-to-r from-blue-50 to-gray-50">
+                <div className="flex justify-center gap-3 items-center w-80 lg:w-auto">
+                  <Image
+                    src={item.img}
+                    width={50}
+                    height={50}
+                    alt="content"
+                    className="hidden lg:block"
+                  />
+                  <Image
+                    src={item.img}
+                    width={40}
+                    height={40}
+                    alt="content"
+                    className="block lg:hidden"
+                  />
+                  <h1 className="font-bold text-blue-600 text-center">
+                    {item.title}
+                  </h1>
+                </div>
+                <div className="mt-3">
+                  <p className="text-center">{item.description}</p>
+                </div>
+                <div className="flex justify-center lg:justify-start mt-10 ">
+                  <p className="bg-orange-600 text-white font-bold rounded-full px-2 text-lg text-center opacity-80 items-center align-middle">
+                    &gt;
+                  </p>
+                </div>
               </div>
             </div>
           ))}

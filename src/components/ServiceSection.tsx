@@ -14,13 +14,16 @@ export default function ServiceSection() {
       </p>
       <div className="flex justify-center gap-2 sm:gap-4 flex-wrap">
         {services.map((service) => (
-            <div className="border p-3 border-blue-800 py-1 bg-white rounded-l-full rounded-r-full" key={service}>
-              <p className="text-blue-700 text-center font-semibold">{service}</p>
-            </div>
+          <div
+            className="border p-3 border-blue-800 py-1 bg-white rounded-l-full rounded-r-full cursor-pointer hover:bg-blue-600 transition duration-300 text-blue-700 hover:text-white"
+            key={service}
+          >
+            <p className=" text-center font-semibold">{service}</p>
+          </div>
         ))}
       </div>
       <p className="font-semibold text-center my-4 ">
-      showcasing our proficiency across various facets of the digital platform 
+        showcasing our proficiency across various facets of the digital platform
       </p>
     </div>
   );
