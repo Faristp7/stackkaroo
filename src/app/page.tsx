@@ -1,4 +1,5 @@
 import DigitalService from "@/components/DigitalService";
+import Footer from "@/components/Footer";
 import MainSection from "@/components/MainSection";
 import OurStory from "@/components/OurStory";
 import SeoServices from "@/components/SeoServices";
@@ -14,6 +15,7 @@ export default function Home() {
         <WhyUs/>
         <DigitalService/>
         <SeoServices/>
+        <Footer/>
     </div>
   );
 }
