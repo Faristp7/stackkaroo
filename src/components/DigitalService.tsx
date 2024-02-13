@@ -35,7 +35,7 @@ const content = [
     img: "/seo.png",
     title: "SEO Optimization",
     description:
-      "We ensure optimal website traffic by addressing factors such as user experience, accessibility, product details, and monitoring target audience.",
+      "We ensure optimal website traffic by addressing factors such as user experience, accessibility, product details.",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function DigitalService() {
       <div className="overflow-x-auto mt-8 ">
         <div className="flex gap-5 px-5 lg:px-28 lg:grid lg:grid-cols-3 lg:gap-5">
           {content.map((item, index) => (
-            <div className="border-2 border-blue-200  p-4 rounded-2xl px-" key={index}>
+            <div className="border-2 border-blue-200  p-4 rounded-2xl" key={index}>
               <div className="flex justify-center gap-3 items-center w-80 lg:w-auto">
                 <Image src={item.img} width={50} height={50} alt="content" className="hidden lg:block"/>
                 <Image src={item.img} width={40} height={40} alt="content" className="block lg:hidden"/>
